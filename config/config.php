@@ -5,9 +5,9 @@ define('IMAGES', ROOT . '/images/');
 define('PROFILE_IMG', ROOT . '/images/users/');
 
 //параметры подкл к БД
-define('HOST', 'localhost:3306');
-define('USER', 'denis_s');
-define('PASS', 'Fib0naccI12358');
+define('HOST', 'localhost');
+define('USER', '******');
+define('PASS', '*****');
 define('DB_NAME', 'the_brand');
 
 //подключение модулей
