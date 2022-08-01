@@ -1,0 +1,111 @@
+.profile__container{
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 60px;
+    padding: 0 100px;
+
+}
+.photo{
+    display: grid;
+    grid-template-rows: auto;
+}
+.photo_container{
+    width: 165px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.photo_container img{
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+
+.tools{
+    display: grid;
+    justify-content: center;
+}
+.edit{
+    margin-top: 20px;
+    padding: 16px 29px;
+    font-size: 13px;
+    background-color: #F16D7F;
+    color: #ffffff;
+    border: 1px solid #F16D7F;
+    text-transform: uppercase;
+    transition: all, 0.3s;
+}
+.about{
+    margin-left: 30px;
+}
+.about h2{
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.profile_info_row{
+    margin: 10px 0;
+    font-style: italic;
+}
+.profile_info_row span{
+    font-style: normal;
+    margin-left: 15px;
+}
+.profile_info_row .yourself{
+    display: grid;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .profile__container{
+        padding: 0 32px;
+    }
+}
+@media (max-width: 425px) {
+    .profile__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 0 8px;
+    }
+}
+
+/* section reviewEdit */
+
+.reviewEdit{
+    margin: 60px 0;
+    padding: 0 100px;
+}
+
+.reviewEdit__container h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#reviewEdit{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 80px auto;
+    gap: 15px;
+}
+#reviewEdit input{
+    align-self: start;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #A4A4A4;
+    font-size: 13px;
+}
+#reviewEdit button{
+    transition: all, 0.3s;
+    justify-self: end;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 17px 39px;
+    border: 1px solid #A4A4A4;
+    background-color: #F16D7F;
+}

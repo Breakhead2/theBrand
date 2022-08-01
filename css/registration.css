@@ -1,0 +1,121 @@
+.login {
+  margin: 64px 0 96px 0;
+}
+.login__container {
+  display: grid;
+  grid-template: auto/minmax(auto, 360px) minmax(22px, 1fr) minmax(auto, 652px);
+}
+.login__container .loginForm {
+  grid-column: 1/2;
+}
+.login__container .loginForm__information {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 20px;
+}
+
+.login__container .loginForm__information label{
+  display: grid;
+}
+
+.error{
+  color: white;
+  font-size: inherit;
+  background-color: #F16D7F;
+  padding: 0;
+  box-sizing: border-box;
+}
+.error.active{
+  padding: 0.3em;
+}
+
+.login__container .loginForm__information_name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.login__container .loginForm__information input {
+  width: 100%;
+  min-height: 44px;
+  padding: 13px 17px;
+  border: 1px solid #A4A4A4;
+  font-size: 14px;
+}
+.login__container .loginForm__information p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.login__container .loginForm__gender {
+  margin: 31px 0 33px 0;
+  display: flex;
+}
+.login__container .loginForm__gender label {
+  margin-right: 20px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+.login__container .loginForm__gender label input {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+}
+.login__container .loginForm #formSubmit {
+  margin-top: 39px;
+  padding: 16px 29px;
+  background-color: #F16D7F;
+  color: #ffffff;
+  border: 1px solid #F16D7F;
+  text-transform: uppercase;
+  transition: all, 0.3s;
+}
+.login__container .loginForm #formSubmit i {
+  margin-left: 20px;
+}
+.login__container .loyalty {
+  grid-column: 3/4;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+.login__container .loyalty__heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.login__container .loyalty p {
+  margin-bottom: 21px;
+}
+.login__container .loyalty__list {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 16px;
+}
+.login__container .loyalty__list i {
+  margin-right: 22px;
+}
+
+/*  media queries for login section   */
+@media (max-width: 768px) {
+  .login {
+    margin: 40px 0 96px 0;
+  }
+  .login__container .loyalty {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .login__container .loyalty__heading {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 425px) {
+  .login__container {
+    display: grid;
+    grid-template: auto/1fr;
+  }
+  .login__container .loyalty {
+    margin-top: 40px;
+    grid-column: 1/2;
+  }
+}

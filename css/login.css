@@ -1,0 +1,60 @@
+.login_form{
+    display: grid;
+    margin: 12% auto;
+    max-width: 450px;
+}
+
+.login_form label{
+    display: grid;
+    margin: 5px 0;
+    width: 100%;
+}
+.login_form #save{
+    display: flex;
+    padding-left: 15px;
+}
+
+#save input{
+    margin-right: 15px;
+}
+
+.login_form input[type="password"], #email{
+    width: 100%;
+    min-height: 44px;
+    margin: 5px 0 0;
+    padding: 13px 17px;
+    border: 1px solid #A4A4A4;
+    font-size: 14px;
+}
+ #formSubmit {
+    margin: 10px 0 10px;
+    padding: 16px 29px;
+    background-color: #F16D7F;
+    color: #ffffff;
+    border: 1px solid #F16D7F;
+    text-transform: uppercase;
+    transition: all, 0.3s;
+}
+#formSubmit i {
+    margin-left: 20px;
+}
+
+.error{
+    color: white;
+    font-size: inherit;
+    background-color: #F16D7F;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.error.active{
+    padding: 0.3em;
+}
+
+/*  media queries for login section   */
+
+@media (max-width: 425px) {
+    .login_form{
+        width: 90%;
+    }
+}
