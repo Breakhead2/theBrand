@@ -6,8 +6,8 @@
             <div class="banner__textBlock">
                 <p class="banner__text big">THE BRAND</p>
                 <p class="banner__text">
-                    РОСКОШНОЙ
-                    <span class="banner__text red">МОДЫ</span>
+                    РОСКОШНАЯ
+                    <span class="banner__text red">ОДЕЖДА</span>
                 </p>
             </div>
         </div>
